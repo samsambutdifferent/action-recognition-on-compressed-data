@@ -1,0 +1,11 @@
+gcsaccesskey*
+.env
+venv*
+.ipynb_checkpoints
+.DS_STORE
+.vscode/
+.devcontainer/
+__pycache__/
+
+
+data_right_left_up_down_1200/*
