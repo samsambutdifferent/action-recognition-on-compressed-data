@@ -8,4 +8,4 @@ venv*
 __pycache__/
 
 
-data_right_left_up_down_1200/*
+data_*
