@@ -12,10 +12,11 @@ Read/run Through the notebooks in order for setup and running
 
 2.2_Naive_temporal_compression
 
+All models in this section are based off the paper by Tran et al. (2018) with reference to the code on at (Tensorflow)[https://www.tensorflow.org/tutorials/video/video_classification]. The (mv-extractor)[https://github.com/LukasBommes/mv-extractor] library is used for key frame and motion vector extraction
+
 
 ## R(2+1)D Models
 
-All models in this section are based off the paper by Tran et al. (2018) with reference to the code on at (Tensorflow)[https://www.tensorflow.org/tutorials/video/video_classification]
 
 ## Uncompressed data on R(2+1)D
 
