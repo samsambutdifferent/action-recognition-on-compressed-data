@@ -152,21 +152,3 @@ def create_model(n_frames, height, width):
     # x = layers.Dense(1, activation="sigmoid")(x) # Change for binary classification
 
     return keras.Model(input, x)
-
-
-def visualise_model(model, file_path):
-    # Generate a graph of the model architecture
-    dot = model_to_dot(model, show_shapes=True, show_layer_names=True, rankdir="TB")
-
-    # Save the 'dot' code to a file
-    with open(file_path, "w") as file:
-        file.write(str(dot))
-
-    # latex = dot.create(prog='dot', format='latex')
-
-    # # Display the LaTeX code
-    # display(Latex(latex))
-
-    # # Save the LaTeX code to a file (optional)
-    # with open('model_summary.tex', 'w') as file:
-    #     file.write(latex)

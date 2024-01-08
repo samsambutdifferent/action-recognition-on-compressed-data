@@ -66,7 +66,7 @@ def frames_from_video_file(video_path, n_frames, output_size=(224, 224), frame_s
 
 
 class FrameGenerator:
-    def __init__(self, path, n_frames, index_df, frame_step, training=False, provide_file_paths=False):
+    def __init__(self, path, n_frames, index_df, frame_step, height, width, training=False, provide_file_paths=False):
         """Returns a set of frames with their associated label.
 
         Args:
@@ -83,6 +83,8 @@ class FrameGenerator:
             (name, idx) for idx, name in enumerate(self.class_names)
         )
         self.index_df = index_df
+        self.height = height
+        self.width = width
         self.provide_file_paths = provide_file_paths
 
     def get_files_and_class_names(self):
@@ -111,7 +113,7 @@ class FrameGenerator:
             video_frames = frames_from_video_file(
                 video_path=path,
                 n_frames=self.n_frames,
-                output_size=(224, 224),
+                output_size=(self.height, self.width),
                 frame_step=self.frame_step,
             )
             label = self.class_ids_for_name[name]  # Encode labels
