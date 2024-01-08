@@ -2,6 +2,8 @@
 
 Read/run Through the notebooks in order for setup and running
 
+NOTE upon request a seperate file can be provided for easier access to the data set
+
 ## Setup download and format data
 
 0_setup.ipynb
