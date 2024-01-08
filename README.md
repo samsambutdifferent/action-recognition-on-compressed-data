@@ -41,7 +41,8 @@ All models in this section are based off the paper by Tran et al. (2018) with re
 
 4.1_2d_plus_1_rlud_1200_kf
 4.2_2d_plus_1_rlud_1200_mv
-4.3_dual_input
+4.2_2d_plus_1_rlud_1200_mv
+4.3_dual_input_rlud_1200_kf_mv_v2
 
 
 
